@@ -1,0 +1,24 @@
+const heroImg = document.querySelector(".hero-image img");
+
+if (heroImg) {
+  console.log("✅ hero image connected");
+
+  heroImg.addEventListener("mousemove", (e) => {
+    const rect = heroImg.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = -(y - centerY) / 12;
+    const rotateY = (x - centerX) / 12;
+
+    heroImg.style.transform = 
+      `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.06)`;
+  });
+
+  heroImg.addEventListener("mouseleave", () => {
+    heroImg.style.transform = "rotateX(0) rotateY(0) scale(1)";
+  });
+}

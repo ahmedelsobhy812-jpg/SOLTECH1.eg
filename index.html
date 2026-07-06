@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SolTech</title>
+<!-- Light Mode Favicon -->
+<link rel="icon" href="favicon-dark.png" media="(prefers-color-scheme: light)">
+
+<!-- Dark Mode Favicon -->
+<link rel="icon" href="favicon-light.png" media="(prefers-color-scheme: dark)">
+
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl : 'https://elsobhy11.app.n8n.cloud/webhook/c054b90c-c735-4b52-a54e-66210a0ede9c/chat' , 
+	webhookConfig : { 
+		method : 'POST' , 
+		headers : { } 
+	} , 
+	target : '#n8n-chat' , 
+	mode : 'window' , 
+	chatInputKey : 'chatInput' , 
+	chatSessionKey : 'sessionId' , 
+	loadPreviousSession : true , 
+	metadata : { } , 
+	showWelcomeScreen : false , 
+	defaultLanguage : 'en' , 
+	initialMessages : [ 
+		'Hello there!' , 
+		'I am AI Soltech',
+    'How can I assist you today?'
+	] , 
+	i18n : { 
+		en : { 
+			title : 'welcome' , 
+			subtitle : "I'm available to help with any questions you have, 24 hours a day" , 
+			footer : '' , 
+			getStarted : 'New Conversation' , 
+			inputPlaceholder : "Type your question" , 
+		} , 
+	} , 
+	enableStreaming : false , 
+} ) ;
+
+</script>
+
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="js/particles-config.js"></script>
+
+<!-- PAGE TRANSITION -->
+<div class="page-transition"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+<div class="logo">SolTech</div>
+
+<ul class="nav-links">
+<li><a href="index.html" data-i18n="home">Home</a></li>
+<li><a href="project.html" data-i18n="project">Project</a></li>
+<li><a href="team.html" data-i18n="team">Team</a></li>
+<li><a href="gallery.html" data-i18n="gallery">Gallery</a></li>
+<li><a href="contact.html" data-i18n="contact">Contact</a></li>
+</ul>
+
+<div class="nav-actions">
+  <button id="menuToggle" class="nav-btn menu-btn">
+   <i class="fas fa-bars"></i>
+  </button>
+
+  <button id="langToggle" class="nav-btn lang-btn">
+    AR
+  </button>
+
+  <button id="themeToggle" class="nav-btn theme-btn">
+    <i id="themeIcon" class="fas fa-moon"></i>
+  </button>
+</div>
+</nav>
+
+<div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+<div id="mobileSidebar" class="mobile-sidebar">
+  <button id="closeSidebar" class="close-sidebar">&times;</button>
+
+  <ul class="sidebar-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-content reveal">
+    <h1 class="hero-title">
+     <span class="welcome" data-i18n="welcome">Welcome to</span>
+     <span class="team" data-i18n="teamName">SolTech Team</span>
+    </h1>
+
+
+    <p class="typewriter">
+     <span id="typeText"></span><span class="cursor">|</span>
+    </p>
+
+
+    <div class="hero-buttons">
+      <a href="project.html" class="btn primary" data-i18n="explore">
+        Explore Project
+      </a>
+
+      <a href="team.html" class="btn outline" data-i18n="meet">
+        Meet The Team
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <div class="hero-image">
+  <img src="assets/images/hero.png" alt="SolTech">
+ </div>
+
+</section>
+
+<section class="about reveal" id="about">
+<h2 data-i18n="aboutTitle">Who We Are</h2>
+<p data-i18n="aboutText">
+ We are TEAM SOLTECH — a group of Food Manufacturing Technology students...
+</p>
+</section>
+
+<!-- سلايدر الصور -->
+<div class="slider-container">
+  <div class="slider">
+    <img src="assets/images/gallery/1.jpg" class="slide active">
+    <img src="assets/images/gallery/2.jpg" class="slide">
+    <img src="assets/images/gallery/3.jpg" class="slide">
+    <img src="assets/images/gallery/4.jpg" class="slide">
+    <img src="assets/images/gallery/5.jpg" class="slide">
+    <img src="assets/images/gallery/6.jpg" class="slide">
+   <img src="assets/images/gallery/7.jpg" class="slide">
+   <img src="assets/images/gallery/8.jpg" class="slide">
+   <img src="assets/images/gallery/9.jpg" class="slide">
+   <img src="assets/images/gallery/10.jpg" class="slide">
+   <img src="assets/images/gallery/11.jpg" class="slide">
+   <img src="assets/images/gallery/12.jpg" class="slide">
+   <img src="assets/images/gallery/13.jpg" class="slide">
+   <img src="assets/images/gallery/14.jpg" class="slide">
+   <img src="assets/images/gallery/15.jpg" class="slide">
+   <img src="assets/images/gallery/16.jpg" class="slide">
+   <img src="assets/images/gallery/17.jpg" class="slide">
+   <img src="assets/images/gallery/18.jpg" class="slide">
+   <img src="assets/images/gallery/19.jpg" class="slide">
+   <img src="assets/images/gallery/20.jpg" class="slide">
+   <img src="assets/images/gallery/21.jpg" class="slide">
+   <img src="assets/images/gallery/22.jpg" class="slide">
+   <img src="assets/images/gallery/23.jpg" class="slide">
+   <img src="assets/images/gallery/24.jpg" class="slide">
+   <img src="assets/images/gallery/25.jpg" class="slide">
+   <img src="assets/images/gallery/26.jpg" class="slide">
+   <img src="assets/images/gallery/27.jpg" class="slide">
+   <img src="assets/images/gallery/28.jpg" class="slide">
+   <img src="assets/images/gallery/29.jpg" class="slide">
+   <img src="assets/images/gallery/30.jpg" class="slide">
+   <img src="assets/images/gallery/31.jpg" class="slide">
+   <img src="assets/images/gallery/32.jpg" class="slide">
+   <img src="assets/images/gallery/33.jpg" class="slide">
+   <img src="assets/images/gallery/34.jpg" class="slide">
+   <img src="assets/images/gallery/35.jpg" class="slide">
+   <img src="assets/images/gallery/36.jpg" class="slide">
+   <img src="assets/images/gallery/37.jpg" class="slide">
+   <img src="assets/images/gallery/38.jpg" class="slide">
+   <img src="assets/images/gallery/39.jpg" class="slide">
+   <img src="assets/images/gallery/40.jpg" class="slide">
+   <img src="assets/images/gallery/41.jpg" class="slide">
+   <img src="assets/images/gallery/42.jpg" class="slide">
+   <img src="assets/images/gallery/43.jpg" class="slide">
+   <img src="assets/images/gallery/44.jpg" class="slide">
+   <img src="assets/images/gallery/45.jpg" class="slide">
+   <img src="assets/images/gallery/46.jpg" class="slide">
+   <img src="assets/images/gallery/47.jpg" class="slide">
+   <img src="assets/images/gallery/48.jpg" class="slide">
+   <img src="assets/images/gallery/49.jpg" class="slide">
+   <img src="assets/images/gallery/50.jpg" class="slide">
+   <img src="assets/images/gallery/51.jpg" class="slide">
+   <img src="assets/images/gallery/52.jpg" class="slide">
+   <img src="assets/images/gallery/53.jpg" class="slide">
+   <img src="assets/images/gallery/54.jpg" class="slide">
+   <img src="assets/images/gallery/55.jpg" class="slide">
+   <img src="assets/images/gallery/56.jpg" class="slide">
+   <img src="assets/images/gallery/57.jpg" class="slide">
+   <img src="assets/images/gallery/58.jpg" class="slide">
+  </div>
+
+  <button class="slider-btn prev">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+
+  <button class="slider-btn next">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+</div>
+
+<!-- سلايدر الفيديو -->
+
+<section class="video-slider-section">
+  <h2>Videos</h2>
+
+  <div class="video-slider">
+
+    <button class="video-arrow left" id="prevVideo">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <div class="video-wrapper">
+      <video class="video-slide active" src="assets/videos/1.mp4" autoplay muted loop></video>
+
+      <button class="mute-btn" id="muteBtn">
+        <i class="fas fa-volume-mute"></i>
+      </button>
+    </div>
+
+    <button class="video-arrow right" id="nextVideo">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+
+  </div>
+</section>
+
+<!-- الفوتر-->
+<footer class="site-footer">
+<div class="footer-container">
+
+<!-- تابعنا -->
+<div class="footer-box">
+<h3 data-i18n="followUs">تابعنا على</h3>
+<div class="footer-links">
+<a href="https://www.facebook.com/share/1Fg6gsDpZn/" target="_blank" rel="noopener noreferrer" class="social facebook">
+<i class="fab fa-facebook-f"></i><span>Facebook</span>
+</a>
+
+<a href="https://x.com/SolTech197335" target="_blank" rel="noopener noreferrer" class="social twitter">
+<i class="fab fa-x-twitter"></i><span>X</span>
+</a>
+
+<a href="https://www.instagram.com/sol_tech_1?igsh=MWR4dTVuaDFiaTRsZQ==" target="_blank" rel="noopener noreferrer" class="social instagram">
+<i class="fab fa-instagram"></i><span>Instagram</span>
+</a>
+</div>
+</div>
+
+<!-- تواصل معنا -->
+<div class="footer-box">
+<h3 data-i18n="contactUs">تواصل معنا على</h3>
+<div class="footer-links">
+<a href="#" target="_blank" rel="noopener noreferrer" class="social whatsapp">
+<i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+</a>
+
+<a href="https://www.instagram.com/sol_tech_1?igsh=MWR4dTVuaDFiaTRsZQ==" target="_blank" rel="noopener noreferrer" class="social instagram">
+<i class="fab fa-instagram"></i><span>Instagram</span>
+</a>
+
+<a href="mailto:soltecgteam1@gmail.com" target="_blank" rel="noopener noreferrer" class="social gmail">
+<i class="fas fa-envelope"></i><span>Gmail</span>
+</a>
+</div>
+</div>
+
+<!-- المصمم -->
+<div class="footer-box">
+<h3 data-i18n="designer">مصمم الموقع</h3>
+<p class="designer-name">by. Ahmed Elsobhy</p>
+<div class="footer-links">
+<a href="#" target="_blank" rel="noopener noreferrer" class="social facebook">
+<i class="fab fa-facebook-f"></i><span>Facebook</span>
+</a>
+
+<a href="#" target="_blank" rel="noopener noreferrer" class="social instagram">
+<i class="fab fa-instagram"></i><span>Instagram</span>
+</a>
+</div>
+</div>
+
+</div>
+</footer>
+
+
+
+<script src="js/lang.js"></script>
+<script src="js/typewriter.js"></script>
+<script src="js/main.js"></script>
+<script src="js/hero-tilt.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/video-slider.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>

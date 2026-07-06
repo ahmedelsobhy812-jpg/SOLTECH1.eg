@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SolTech | Project</title>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Particles Background -->
+<div id="particles-js"></div>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="js/particles-config.js"></script>
+
+<!-- PAGE TRANSITION -->
+<div class="page-transition"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+<div class="logo">SolTech</div>
+
+<ul class="nav-links">
+<li><a href="index.html" data-i18n="home">Home</a></li>
+<li><a href="project.html" data-i18n="project">Project</a></li>
+<li><a href="team.html" data-i18n="team">Team</a></li>
+<li><a href="gallery.html" data-i18n="gallery">Gallery</a></li>
+<li><a href="contact.html" data-i18n="contact">Contact</a></li>
+</ul>
+
+<div class="nav-actions">
+  <button id="menuToggle" class="nav-btn menu-btn">
+   <i class="fas fa-bars"></i>
+  </button>
+
+  <button id="langToggle" class="nav-btn lang-btn">
+    AR
+  </button>
+
+  <button id="themeToggle" class="nav-btn theme-btn">
+    <i id="themeIcon" class="fas fa-moon"></i>
+  </button>
+</div>
+</nav>
+
+<div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+<div id="mobileSidebar" class="mobile-sidebar">
+  <button id="closeSidebar" class="close-sidebar">&times;</button>
+
+  <ul class="sidebar-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- PAGE CONTENT -->
+<section class="page-content reveal">
+
+<!-- ✨ ابدأ حط محتوى الصفحة من هنا ✨ -->
+ <div class="pdf-viewer">
+    <iframe
+      src="assets/pdf/project.pdf#toolbar=0&navpanes=0&scrollbar=0"
+      width="100%"
+      height="900"
+      frameborder="0">
+    </iframe>
+</div>
+
+</section>
+<!-- الفوتر-->
+<footer class="site-footer">
+<div class="footer-container">
+
+<!-- تابعنا -->
+<div class="footer-box">
+<h3 data-i18n="followUs">تابعنا على</h3>
+<div class="footer-links">
+<a href="https://www.facebook.com/share/1Fg6gsDpZn/" target="_blank" rel="noopener noreferrer" class="social facebook">
+<i class="fab fa-facebook-f"></i><span>Facebook</span>
+</a>
+
+<a href="https://x.com/SolTech197335" target="_blank" rel="noopener noreferrer" class="social twitter">
+<i class="fab fa-x-twitter"></i><span>X</span>
+</a>
+
+<a href="https://www.instagram.com/sol_tech_1?igsh=MWR4dTVuaDFiaTRsZQ==" target="_blank" rel="noopener noreferrer" class="social instagram">
+<i class="fab fa-instagram"></i><span>Instagram</span>
+</a>
+</div>
+</div>
+
+<!-- تواصل معنا -->
+<div class="footer-box">
+<h3 data-i18n="contactUs">تواصل معنا على</h3>
+<div class="footer-links">
+<a href="#" target="_blank" rel="noopener noreferrer" class="social whatsapp">
+<i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+</a>
+
+<a href="#" target="_blank" rel="noopener noreferrer" class="social instagram">
+<i class="fab fa-instagram"></i><span>Instagram</span>
+</a>
+
+<a href="mailto:example@gmail.com" target="_blank" rel="noopener noreferrer" class="social gmail">
+<i class="fas fa-envelope"></i><span>Gmail</span>
+</a>
+</div>
+</div>
+
+<!-- المصمم -->
+<div class="footer-box">
+<h3 data-i18n="designer">مصمم الموقع</h3>
+<p class="designer-name">by. Ahmed Elsobhy</p>
+<div class="footer-links">
+<a href="#" target="_blank" rel="noopener noreferrer" class="social facebook">
+<i class="fab fa-facebook-f"></i><span>Facebook</span>
+</a>
+
+<a href="#" target="_blank" rel="noopener noreferrer" class="social instagram">
+<i class="fab fa-instagram"></i><span>Instagram</span>
+</a>
+</div>
+</div>
+
+</div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/lang.js"></script>
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SolTech | Gallery</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+<!-- PAGE TRANSITION -->
+<div class="page-transition"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+<div class="logo">SolTech</div>
+
+<ul class="nav-links">
+<li><a href="index.html" data-i18n="home">Home</a></li>
+<li><a href="project.html" data-i18n="project">Project</a></li>
+<li><a href="team.html" data-i18n="team">Team</a></li>
+<li><a href="gallery.html" data-i18n="gallery">Gallery</a></li>
+<li><a href="contact.html" data-i18n="contact">Contact</a></li>
+</ul>
+
+<div class="nav-actions">
+  <button id="menuToggle" class="nav-btn menu-btn">
+   <i class="fas fa-bars"></i>
+  </button>
+
+  <button id="langToggle" class="nav-btn lang-btn">
+    AR
+  </button>
+
+  <button id="themeToggle" class="nav-btn theme-btn">
+    <i id="themeIcon" class="fas fa-moon"></i>
+  </button>
+</div>
+</nav>
+
+<div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+<div id="mobileSidebar" class="mobile-sidebar">
+  <button id="closeSidebar" class="close-sidebar">&times;</button>
+
+  <ul class="sidebar-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- GALLERY PAGE -->
+<section class="gallery-page reveal">
+
+<h1 data-i18n="gallery">Gallery</h1>
+
+<div class="gallery-grid">
+ <img src="assets/images/gallery/1.jpg">
+ <img src="assets/images/gallery/2.jpg">
+ <img src="assets/images/gallery/3.jpg">
+ <img src="assets/images/gallery/4.jpg">
+ <img src="assets/images/gallery/5.jpg">
+ <img src="assets/images/gallery/6.jpg">
+ <img src="assets/images/gallery/7.jpg">
+ <img src="assets/images/gallery/8.jpg">
+ <img src="assets/images/gallery/9.jpg">
+ <img src="assets/images/gallery/10.jpg">
+ <img src="assets/images/gallery/11.jpg">
+ <img src="assets/images/gallery/12.jpg">
+ <img src="assets/images/gallery/13.jpg">
+ <img src="assets/images/gallery/14.jpg">
+ <img src="assets/images/gallery/15.jpg">
+ <img src="assets/images/gallery/16.jpg">
+ <img src="assets/images/gallery/17.jpg">
+ <img src="assets/images/gallery/18.jpg">
+ <img src="assets/images/gallery/19.jpg">
+ <img src="assets/images/gallery/20.jpg">
+ <img src="assets/images/gallery/21.jpg">
+ <img src="assets/images/gallery/22.jpg">
+ <img src="assets/images/gallery/23.jpg">
+ <img src="assets/images/gallery/24.jpg">
+ <img src="assets/images/gallery/25.jpg">
+ <img src="assets/images/gallery/26.jpg">
+ <img src="assets/images/gallery/27.jpg">
+ <img src="assets/images/gallery/28.jpg">
+ <img src="assets/images/gallery/29.jpg">
+ <img src="assets/images/gallery/30.jpg">
+ <img src="assets/images/gallery/31.jpg">
+ <img src="assets/images/gallery/32.jpg">
+ <img src="assets/images/gallery/33.jpg">
+ <img src="assets/images/gallery/34.jpg">
+ <img src="assets/images/gallery/35.jpg">
+ <img src="assets/images/gallery/36.jpg">
+ <img src="assets/images/gallery/37.jpg">
+ <img src="assets/images/gallery/38.jpg">
+ <img src="assets/images/gallery/39.jpg">
+ <img src="assets/images/gallery/40.jpg">
+ <img src="assets/images/gallery/41.jpg">
+ <img src="assets/images/gallery/42.jpg">
+ <img src="assets/images/gallery/43.jpg">
+ <img src="assets/images/gallery/44.jpg">
+ <img src="assets/images/gallery/45.jpg">
+ <img src="assets/images/gallery/46.jpg">
+ <img src="assets/images/gallery/47.jpg">
+ <img src="assets/images/gallery/48.jpg">
+ <img src="assets/images/gallery/49.jpg">
+ <img src="assets/images/gallery/50.jpg">
+ <img src="assets/images/gallery/51.jpg">
+ <img src="assets/images/gallery/52.jpg">
+ <img src="assets/images/gallery/53.jpg">
+ <img src="assets/images/gallery/54.jpg">
+ <img src="assets/images/gallery/55.jpg">
+ <img src="assets/images/gallery/56.jpg">
+ <img src="assets/images/gallery/57.jpg">
+ <img src="assets/images/gallery/58.jpg">
+</div>
+
+
+</section>
+
+<!-- IMAGE PREVIEW -->
+<div class="image-preview" id="imagePreview">
+  <span class="close-preview" id="closePreview">&times;</span>
+  <img id="previewImg" src="" alt="preview">
+</div>
+
+
+<!-- الفوتر-->
+<footer class="site-footer">
+<div class="footer-container">
+
+<!-- تابعنا -->
+<div class="footer-box">
+<h3 data-i18n="followUs">تابعنا على</h3>
+<div class="footer-links">
+<a href="https://www.facebook.com/share/1Fg6gsDpZn/" target="_blank" rel="noopener noreferrer" class="social facebook">
+<i class="fab fa-facebook-f"></i><span>Facebook</span>
+</a>
+
+<a href="https://x.com/SolTech197335" target="_blank" rel="noopener noreferrer" class="social twitter">
+<i class="fab fa-x-twitter"></i><span>X</span>
+</a>
+
+<a href="https://www.instagram.com/sol_tech_1?igsh=MWR4dTVuaDFiaTRsZQ==" target="_blank" rel="noopener noreferrer" class="social instagram">
+<i class="fab fa-instagram"></i><span>Instagram</span>
+</a>
+</div>
+</div>
+
+<!-- تواصل معنا -->
+<div class="footer-box">
+<h3 data-i18n="contactUs">تواصل معنا على</h3>
+<div class="footer-links">
+<a href="#" target="_blank" rel="noopener noreferrer" class="social whatsapp">
+<i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+</a>
+
+<a href="#" target="_blank" rel="noopener noreferrer" class="social instagram">
+<i class="fab fa-instagram"></i><span>Instagram</span>
+</a>
+
+<a href="mailto:example@gmail.com" target="_blank" rel="noopener noreferrer" class="social gmail">
+<i class="fas fa-envelope"></i><span>Gmail</span>
+</a>
+</div>
+</div>
+
+<!-- المصمم -->
+<div class="footer-box">
+<h3 data-i18n="designer">مصمم الموقع</h3>
+<p class="designer-name">by. Ahmed Elsobhy</p>
+<div class="footer-links">
+<a href="#" target="_blank" rel="noopener noreferrer" class="social facebook">
+<i class="fab fa-facebook-f"></i><span>Facebook</span>
+</a>
+
+<a href="#" target="_blank" rel="noopener noreferrer" class="social instagram">
+<i class="fab fa-instagram"></i><span>Instagram</span>
+</a>
+</div>
+</div>
+
+</div>
+</footer>
+
+
+<!-- Scripts -->
+<script src="js/lang.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
